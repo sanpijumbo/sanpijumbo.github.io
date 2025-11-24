@@ -128,25 +128,48 @@
   </header>
 
   <main>
-    <!-- 英雄区 -->
-    <section id="home" class="pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-b from-white to-blue-50">
-      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col md:flex-row items-center">
-          <div class="md:w-1/2 fade-in">
-            <h1 class="text-[clamp(2.5rem,5vw,4rem)] font-bold leading-tight text-dark mb-4">
-              创意设计 & <br><span class="text-primary">前端开发</span>
-            </h1>
-            <p class="text-muted text-lg md:text-xl mb-8 max-w-lg">
-              专注于创建美观、响应式且用户友好的数字产品，将创意转化为令人印象深刻的在线体验。
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4">
-              <a href="#projects" class="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-primary text-white font-medium hover:bg-primary/90 transition-custom">
-                查看作品集 <i class="fa fa-eye ml-2"></i>
-              </a>
-              <a href="#contact" class="inline-flex items-center justify-center px-6 py-3 rounded-lg border border-dark text-dark font-medium hover:bg-dark hover:text-white transition-custom">
-                了解更多 <i class="fa fa-info-circle ml-2"></i>
-              </a>
-            </div>
+    <!-- 首页英雄区（已替换为你的3张图片） -->
+<section id="home" class="min-h-screen flex items-center pt-16 relative overflow-hidden">
+  <!-- 背景装饰 -->
+  <div class="absolute inset-0 bg-gradient-to-br from-gray-50 to-gray-100 -z-10"></div>
+  <div class="absolute top-20 right-0 w-1/2 h-1/2 bg-primary/5 rounded-full filter blur-3xl -z-10"></div>
+  
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="text-center mb-12 fade-in">
+      <h1 class="text-[clamp(2rem,5vw,3.5rem)] font-bold text-dark mb-6">
+        我的生活瞬间
+      </h1>
+      <p class="text-muted text-lg max-w-2xl mx-auto mb-8">
+        记录日常中的美好时刻，分享自然与生活的点滴
+      </p>
+    </div>
+    
+    <!-- 你的3张图片展示区 -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 fade-in" style="animation-delay: 0.3s">
+      <!-- 图片1 -->
+      <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-custom transform hover:-translate-y-1">
+        <img src="https://ibb.co/FbGFgWqM" alt="生活瞬间1" class="w-full h-80 object-cover">
+      </div>
+      
+      <!-- 图片2 -->
+      <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-custom transform hover:-translate-y-1">
+        <img src="https://ibb.co/6R8mp2RM" alt="生活瞬间2" class="w-full h-80 object-cover">
+      </div>
+      
+      <!-- 图片3 -->
+      <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-custom transform hover:-translate-y-1">
+        <img src="https://ibb.co/q30q3vXT" alt="生活瞬间3" class="w-full h-80 object-cover">
+      </div>
+    </div>
+    
+    <!-- 下方按钮（保持原有风格） -->
+    <div class="text-center mt-12 fade-in" style="animation-delay: 0.5s">
+      <a href="#about" class="inline-flex items-center px-8 py-4 rounded-lg bg-primary text-white font-medium hover:bg-primary/90 transition-custom">
+        了解更多 <i class="fa fa-arrow-down ml-2"></i>
+      </a>
+    </div>
+  </div>
+</section>
             
             <!-- 社交图标 -->
             <div class="mt-10 flex space-x-4">
